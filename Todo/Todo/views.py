@@ -97,3 +97,11 @@ def delete_todo(request, todo_id):
         messages.success(request, "To-do item deleted successfully!")
     return redirect('todo')
 
+
+def Log(request):
+    """
+    Logs out the current user and redirects them to the home page or login page.
+    """
+    logout(request)
+    messages.success(request, 'You have been logged out successfully.')
+    return redirect('login')  
