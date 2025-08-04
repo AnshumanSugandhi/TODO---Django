@@ -98,7 +98,7 @@ def delete_todo(request, todo_id):
     return redirect('todo')
 
 
-def Log(request):
+def Logout(request):
     """
     Logs out the current user and redirects them to the home page or login page.
     """
